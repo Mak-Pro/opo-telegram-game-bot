@@ -1,0 +1,30 @@
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 12px;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  max-width: 100vw;
+  z-index: 50;
+
+  &::before {
+    content: "";
+    border-radius: inherit;
+    position: absolute;
+    inset: 0px;
+    backdrop-filter: blur(10px) opacity(1);
+    z-index: -1;
+  }
+
+  &__logo {
+    display: inline-flex;
+    align-items: center;
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: 0.6px;
+    gap: 0 8px;
+  }
+}

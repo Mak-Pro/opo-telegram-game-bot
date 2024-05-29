@@ -1,0 +1,13 @@
+.footer {
+  max-width: 560px;
+  padding: 8px;
+  border-radius: 12px;
+  position: fixed;
+  left: 50%;
+  transform: translateX(calc(-50% - 16px));
+  width: calc(100% - 32px);
+  margin: 0 16px;
+  top: calc($tgViewportStableHeight - 74px);
+  z-index: 50;
+  backdrop-filter: blur(10px);
+}

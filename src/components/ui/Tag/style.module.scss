@@ -1,0 +1,12 @@
+.tag {
+  display: inline-flex;
+  align-items: center;
+  border: 1px solid rgba(118, 118, 128, 0.12);
+  border-radius: 45px;
+  padding: 4px 8px 4px 4px;
+
+  &__reverse {
+    flex-direction: row-reverse;
+    padding: 4px 4px 4px 8px;
+  }
+}

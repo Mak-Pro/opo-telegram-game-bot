@@ -1,0 +1,54 @@
+.tonconnect {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 10px 0;
+  background-color: rgba($gray100, 0.5);
+  border-radius: $borderRadiusBase;
+  padding: 10px;
+
+  &__info {
+    border-radius: $borderRadiusBase;
+    background-color: $white;
+    display: flex;
+    align-items: center;
+    font-size: 20px;
+    font-weight: 700;
+    overflow: hidden;
+    padding: 0 16px;
+    height: 52px;
+
+    sub {
+      display: inline-block;
+      font-weight: 400;
+      top: 2px;
+      margin: 0 5px;
+    }
+  }
+
+  &__address {
+    position: relative;
+    border-radius: $borderRadiusBase;
+    display: flex;
+    align-items: center;
+    padding: 0 16px;
+    height: 52px;
+    z-index: 2;
+    cursor: pointer;
+
+    &_note {
+      position: absolute;
+      left: 0;
+      top: 100%;
+      width: 100%;
+      background-color: $white;
+      border-radius: $borderRadiusBase;
+      padding: 16px;
+    }
+  }
+
+  &__btn {
+    height: 52px;
+    width: 100%;
+  }
+}

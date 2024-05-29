@@ -1,0 +1,9 @@
+.infobox {
+  display: flex;
+  flex-direction: column;
+  gap: 13px 0;
+
+  &__title {
+    font-weight: 400;
+  }
+}

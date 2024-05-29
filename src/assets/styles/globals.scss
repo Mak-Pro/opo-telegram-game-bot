@@ -1,0 +1,66 @@
+@import "reset";
+@import "variables.scss";
+
+html,
+body {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.31;
+  cursor: default;
+  overflow-x: hidden;
+  width: 100%;
+  max-width: 100vw;
+  min-height: 100%;
+  color: $tgTextColor;
+  background: $tgBgColor;
+  overscroll-behavior: contain;
+  position: relative;
+  max-width: 560px;
+  margin: 0 auto;
+}
+
+main {
+  padding: 56px 16px 0;
+}
+
+h1 {
+  @include fontType(inherit, 28px, 700, normal, 1.21);
+}
+
+h2 {
+  @include fontType(inherit, 28px, 700, normal, 1.21);
+}
+
+h3 {
+  @include fontType(inherit, 22px, 600, normal, 1.27);
+}
+
+h4 {
+  @include fontType(inherit, 17px, 600, normal, 1.29);
+}
+
+.swiper {
+  &-pagination {
+    &-bullets {
+      &-dynamic {
+        .swiper-pagination-bullet-active-prev-prev,
+        .swiper-pagination-bullet-active-next-next {
+          transform: scale(0.43) !important;
+        }
+      }
+    }
+
+    &-bullet {
+      background-color: #c5c5c7 !important;
+      opacity: 1 !important;
+
+      &-active {
+        background-color: #489fdf !important;
+      }
+    }
+  }
+}
